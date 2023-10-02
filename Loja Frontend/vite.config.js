@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        //target: "http://placeholder-api-url.com",
+        target: "https://loja-gamma.vercel.app/",
         changeOrigin: true,
         secure: false,
       },
