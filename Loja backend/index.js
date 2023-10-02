@@ -9,17 +9,14 @@ const router = require("./Router/routes");
 
 
 // Plugins Start
-app.use(cors({
-  methods:['POST','GET'],
-  credentials:true
-}));
+app.use(cors());
 app.use(cookieParser());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.static(path.resolve(__dirname,'dist')));
 app.get('*',(req,res)=>res.sendFile(path.resolve('dist','index.html')));
 // Plugins End
 
-app.use("/public", express.static(path.join(__dirname, "public")));
+//app.use("/public", express.static(path.join(__dirname, "public")));
 
 app.use("/api", router);
 
