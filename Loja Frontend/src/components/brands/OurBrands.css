@@ -1,0 +1,33 @@
+.brand-container {
+  width: 100%;
+}
+.brand-container .brand {
+  display: flex;
+  margin: 0rem 7%;
+  margin-top: 4rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+.brand-container .brand h2 {
+  text-align: center;
+}
+.brand-container .brand-logo {
+  display: flex;
+  gap: 2rem;
+}
+.brand-container .brand-logo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-container .brand-logo img {
+  width: 50%;
+}
+@media (max-width: 440px) {
+  .brand-container .brand-logo {
+    flex-direction: column;
+  }
+  .brand-container .brand-logo img {
+    width: 100%;
+  }
+}

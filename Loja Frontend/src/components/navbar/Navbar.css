@@ -1,0 +1,226 @@
+.container {
+  width: 100%;
+}
+.container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0px 5% !important;
+  background-color: var(--bg-color);
+}
+.container .navbar .navbar_header img {
+  width: 120px;
+}
+.navbar .navbar_menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.navbar .navbar_menu a {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.2s;
+}
+.navbar .navbar_menu a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  background-color: #666;
+  height: 2px;
+  transition: all 0.2s;
+}
+.navbar .navbar_menu a:hover {
+  color: #555;
+  transition: all 0.2s;
+}
+.navbar .navbar_menu a:hover::after {
+  width: 100%;
+  transition: all 0.2s;
+}
+.navbar .navbar_link_icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar_link_icons .search_box {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.navbar .navbar_link_icons .search_box input {
+  border: 2px solid #666;
+  outline: none;
+  background: transparent;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  color: #555;
+  width: 100%;
+}
+.navbar .navbar_link_icons .icon {
+  font-size: 1.5rem;
+}
+.navbar .navbar_link_icons .hover:hover {
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffffff8c;
+  transition: all.3s;
+}
+.navbar .cart_icon {
+  display: flex;
+  position: relative;
+}
+.navbar .cart_icon span {
+  height: 1.2rem;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  width: 1.2rem;
+  color: #fff;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -9px;
+  right: -4px;
+}
+.show {
+  display: inline-block;
+}
+.none {
+  display: none;
+}
+.bar {
+  display: none;
+  z-index: 99999;
+  font-size: 1.5rem;
+}
+.modal-show {
+  display: block;
+  transform: translateY(-100vh);
+  transition: all 0.6s ease-in-out;
+  position: relative;
+  z-index: 9999;
+  opacity: 0;
+}
+.navbar_menu li:hover .modal-show {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+@media (max-width: 990px) {
+  .navbar_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    width: 20%;
+    transform: translateX(-100%);
+    transition: 0.5s all;
+  }
+  .mobile-menu {
+    transform: translateX(0%);
+  }
+  .bar {
+    display: flex;
+    transition: 0.2s;
+  }
+  .rotate {
+    transform: rotate(300deg);
+    transition: 0.2s;
+  }
+}
+@media (max-width: 600px) {
+  .navbar_menu {
+    width: 100%;
+  }
+  .navbar .navbar_link_icons {
+    position: absolute;
+    top: 5rem;
+    right: 5%;
+    z-index: 999999;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  right: 10%;
+  z-index: 1;
+  top: -200px; /* Start offscreen above */
+  opacity: 0;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  padding-bottom: 10px;
+
+}
+/* Style for the dropdown links */
+.dropdown-content a {
+  position: relative; /* Add this to make ::after relative to the text */
+  color: #333;
+  padding: 12px 10px 5px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+/* Change link color and underline on hover */
+.dropdown-content a:hover {
+  color: #555;
+  transition: all 0.2s;
+}
+/* Underline effect for the dropdown links */
+.dropdown-content a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  background-color: #666;
+  height: 2px;
+  bottom: 0;
+  transition: width 0.2s;
+}
+/* Show the dropdown content and slide down on hover */
+.dropdown:hover .dropdown-content {
+  top: 100%; 
+  opacity: 1;
+}
+.dropdown-content a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  background-color: #666;
+  height: 2px;
+  transition: all 0.2s;
+}
+.dropdown-content a:hover {
+  color: #555;
+  transition: all 0.2s;
+}
+.dropdown-content a:hover::after {
+  width: 70%;
+  transition: all 0.2s;
+}

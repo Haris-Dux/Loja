@@ -1,0 +1,105 @@
+:root {
+  --footer-color: #4b3515;
+}
+.container {
+  width: 100%;
+}
+.container .footer_content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 6rem 5%;
+  background-color: var(--bg-color);
+}
+.footer_content .footer_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  flex-direction: column;
+}
+.footer_content .footer_top .footer_search_box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footer_top .footer_search_box .footer_input {
+  width: 40%;
+}
+.footer_top .footer_search_box .footer_input input {
+  width: 100%;
+}
+.footer_content .footer_center {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+.footer_center .footer_center_box {
+  flex-basis: 22%;
+  min-width: 200px;
+  flex-grow: 1;
+}
+.footer_center .footer_center_box h2 {
+  font-size: 1.6rem !important;
+}
+.footer_center .footer_center_box p {
+  color: var(--footer-color);
+}
+.footer_content .footer_center ul li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--footer-color);
+  position: relative;
+}
+.footer_content .footer_center ul li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  background-color: var(--footer-color);
+  height: 2px;
+  transition: all 0.2s;
+}
+.footer_content .footer_center ul li a:hover::after {
+  width: 100%;
+  transition: all 0.2s;
+}
+.footer_center .footer_center_box h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.footer_content .footer_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.footer_content .footer_bottom .footer_bottom_box {
+  display: flex;
+  gap: 0.6rem;
+}
+.footer_content .footer_bottom .icon {
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.footer_content .footer_bottom .icon:hover {
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all.3s;
+}
+.footer_content .footer_bottom .footer_bottom_box p a {
+  color: var(--footer-color);
+  font-size: 1rem;
+  font-weight: 500;
+}

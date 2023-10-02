@@ -1,0 +1,129 @@
+.noOrder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 5rem;
+  gap: 2rem;
+  /* height: 50vh; */
+}
+.noOrder img {
+  width: 30%;
+}
+.cart-container {
+  width: 100%;
+}
+.cart-container .cart {
+  margin: 3rem 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.cart .left-side {
+  flex-basis: 70%;
+}
+.left-side .cart-header {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.left-side .cart-header h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.cart-header .cart-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-title h6 {
+  font-size: 1rem;
+}
+.cart-title .btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+.cart-header .search {
+  display: flex;
+  width: 100%;
+}
+.search input {
+  width: 91%;
+}
+.cart .cards {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.cards .card {
+  display: flex;
+  gap: 0.9rem;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.cards .card img {
+  width: 30%;
+}
+.cards .card .card-body {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+.card-body .card-title {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.card-body .edit-delete {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+.card-title p {
+  border-bottom: 2px dashed red;
+  padding-bottom: 0.9rem;
+}
+.card-title .price,
+.quantity,
+.brand,
+.category {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+}
+.cart .right-side {
+  flex-basis: 30%;
+}
+.right-side .totalQtyAmt {
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.05);
+  /* border: 2px solid red; */
+  padding: 2rem;
+}
+
+.right-side .totalQtyAmt .total {
+  display: flex;
+  gap: 0.9rem;
+  flex-direction: column;
+}
+.right-side .totalQtyAmt .total h2 {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px dashed red;
+}
+.totalQtyAmt .total .totalQty,
+.totalQtyAmt .total .totalAmt {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .noOrder img {
+    width: 60%;
+  }
+}

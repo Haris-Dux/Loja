@@ -1,0 +1,50 @@
+.fash_contanier {
+  width: 100%;
+}
+.fash_contanier .fashion {
+  display: flex;
+  margin: 3rem 7%;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.fashion .box {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.fashion .box .left_side {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 2rem;
+  width: 50%;
+}
+.fashion .left_side h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.fashion .left_side .fashion-btn {
+  background-color: #fff;
+  color: black;
+  font-weight: 600;
+}
+
+@media (max-width: 950px) {
+  .fash_contanier .fashion {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .fashion .box {
+    flex-basis: 47%;
+  }
+}
+@media (max-width: 600px) {
+  .fashion .box {
+    flex-basis: 100%;
+  }
+}

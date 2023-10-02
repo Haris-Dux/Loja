@@ -1,0 +1,45 @@
+.trending-product {
+  margin: 0px 7%;
+}
+.trending-product h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.trending-product .trending-product-body {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  /* flex-wrap: wrap; */
+  margin-top: 2rem;
+}
+.allproducts-filter {
+  margin: 0px 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.allproducts-filter .all-products {
+  flex-basis: 74%;
+}
+.allproducts-filter .all-products h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.allproducts-filter .allproducts-body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.allproducts-filter .filter-components {
+  flex-basis: 22%;
+}
+.man-shop .shop-now {
+  background-color: rgb(131, 159, 172);
+}

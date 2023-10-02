@@ -1,0 +1,43 @@
+.cartModal {
+  position: absolute;
+  z-index: 99999;
+  right: 7.8rem;
+  top: 1.9rem;
+  width: 20%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.05);
+  overflow: auto;
+  max-height: 50vh;
+}
+.cartModal .body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-bottom: 2px dashed darksalmon;
+  padding-bottom: 0.9rem;
+}
+.card img {
+  width: 20%;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.card-body .brand-price {
+  display: flex;
+  flex-direction: column;
+}
+.card-body .brand-price .brand {
+  display: flex;
+}
+.card-body .price {
+  display: flex;
+  justify-content: space-between;
+}
